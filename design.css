@@ -4,8 +4,11 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+body{
+    width: fit-content;
+    height: fit-content;
+}
 #menubar{
-    width: 100%;
     background-color: rgb(0, 0, 0);
     border-bottom: 2px solid rgb(248, 248, 248);
     height: 9vh;
@@ -33,7 +36,6 @@
 /* -------info----------- */
 #Home {
     border-bottom: 2px solid rgb(248, 248, 248);
-    width: 100%;
     background-color: black;
     color: rgb(255, 0, 85);
     padding: 50px 0;
@@ -65,7 +67,7 @@
 }
 
 .text-col .social-icons img {
-    width: 9vb;
+    width: 8vb;
     height: auto;
     margin: 0 10px;
     cursor: pointer;
@@ -98,7 +100,7 @@
 
 .img-animate {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     border-radius: 20px;
 }
 
@@ -108,7 +110,6 @@
     padding: 50px 10%;
     background-color: black;
     color:rgb(255, 0, 85) ;
-    width: 100%;
 }
 #Skill h1{
     font-size: 35px;
@@ -140,7 +141,6 @@
     background-color: rgba(255, 0, 85, 0.5);
     transition: width 3s ease-in-out;
     border-radius: 8px;
-    height: 100%;
     display: flex;
     align-items: center;
     padding-left:1%;
@@ -152,8 +152,7 @@
     padding: 40px 20px;
     background-color: black;
     color:rgb(255, 0, 85) ;
-    border-bottom: 2px solid rgb(248, 248, 248);
-    width: 100%;
+    border-bottom: 2px solid rgb(248, 248, 248); 
 }
 #certification h1{
     font-size: 35px;
@@ -192,23 +191,29 @@
 /* -------------media-quries-for-small-screen-------------- */
 
 @media only screen and (max-width : 800px){
-    #menubar{
-        width: 100vb;
+    .row {
+        flex-direction: column;
     }
-    #Home{
-        width: 100vb;
+
+    .text-col h1{
+        margin-top: 15px;
     }
-    #Skill{
-        width: 100vb;
+    .text-col {
+        flex: 1 1 100%;
+        padding: 0 5%;
     }
-    #certification{
-        width: 100vb;
+
+    .img-col {
+        flex: 1 1 100%;
+        padding: 0 5%;
     }
-    #Project{
-        width: 100vb;
+
+    .text-col .social-icons img {
+        width: 15%;
     }
-    #Contact{
-        width: 100vb;
+
+    .img-animate {
+        max-width: 80%;
     }
     .lan-col .item{
         display: flex;
