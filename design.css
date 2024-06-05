@@ -64,9 +64,9 @@ body{
 
 .text-col .social-icons img {
     width: 8vb;
-    height: auto;
     margin-right: 1%;
     cursor: pointer;
+    /* background-color: white; */
 }
 
 .text-col button {

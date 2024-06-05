@@ -2,7 +2,8 @@
 const socialMapping={
     linkedin:"https://www.linkedin.com/in/riddh-modi-29a348226/",
     github:"https://github.com/Riddh2003",
-    x:"https://x.com/RiddhModi",
+    leetcode:"https://leetcode.com/u/RiddhModi/",
+    gfgs:"https://www.geeksforgeeks.org/user/riddhmodi2003/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user",
     resume:"RiddhModi Java_Android Resume.pdf"
 };
 var social = document.querySelectorAll('.text-col img');
@@ -62,6 +63,7 @@ const languages = {
     "hc": 70,
     "JavaScript": 35,
     "sql": 70,
+    "dsa":60,
     "java": 95,
     "ajava": 85,
     "spring": 90,
