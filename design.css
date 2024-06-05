@@ -16,6 +16,7 @@ body{
     justify-content: space-between;
     align-items: center;
     color: rgb(255, 0, 85);
+    padding-right: 100px;
 }
 #menubar h1{
     margin-left: 10rem;
@@ -23,9 +24,10 @@ body{
 }
 #menubar a{
     color: rgb(255, 0, 85);
-    margin-right :10vb;
+    margin-right :40px;
     font-size: large;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 20px;
     text-decoration: none;
 }
 #menubar a:hover{
@@ -33,7 +35,7 @@ body{
     transition: 5ms;
 }
 
-/* -------info----------- */
+/* -------Home----------- */
 #Home {
     border-bottom: 2px solid rgb(248, 248, 248);
     background-color: black;
@@ -56,20 +58,14 @@ body{
     text-align: center;
 }
 
-.text-col h1, .text-col h2 {
+.text-col .social-icons,.text-col h1, .text-col h2 {
     margin: 10px 0;
-}
-
-.text-col .social-icons {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
 }
 
 .text-col .social-icons img {
     width: 8vb;
     height: auto;
-    margin: 0 10px;
+    margin-right: 1%;
     cursor: pointer;
 }
 
@@ -99,6 +95,7 @@ body{
 }
 
 .img-animate {
+    border: 2px solid white;
     width: 100%;
     max-width: 400px;
     border-radius: 20px;
@@ -119,7 +116,7 @@ body{
     flex-wrap: wrap;
 }
 .lan-col h3{
-    width: 25%;
+    width: 20rem;
 }
 .item{
     display: flex;
@@ -191,6 +188,12 @@ body{
 /* -------------media-quries-for-small-screen-------------- */
 
 @media only screen and (max-width : 800px){
+    #menubar,#Home,#Skill,#certification{
+        width: fit-content;
+    }
+    #menubar h1{
+        text-align: center;
+    }
     .row {
         flex-direction: column;
     }
@@ -213,7 +216,7 @@ body{
     }
 
     .img-animate {
-        max-width: 80%;
+        max-width: 50vb;
     }
     .lan-col .item{
         display: flex;
@@ -222,5 +225,18 @@ body{
         flex-wrap: wrap;
         width: 100%;
         margin-top: 1%;
+    }
+    .lan-col h3{
+        margin-top: 1rem;
+    }
+    #certification h1{
+        margin-left: 5%;
+    }
+    .certification-item{
+        width: 195px;
+        margin: 20px;
+    }
+    .certification-item img{
+        width: 150px;
     }
 }
