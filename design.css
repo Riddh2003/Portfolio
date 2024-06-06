@@ -185,6 +185,47 @@ body{
     font-weight: bold;
 }
 
+/* -----------Project-------------- */
+#Project{
+    padding: 40px 20px;
+    background-color: black;
+    color: rgb(255, 0, 85);
+    border-bottom:2px solid white ;
+}
+#Project h1{
+    font-size: 35px;
+    margin-left: 9%;
+}
+.Project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Project-box{
+    border: 2px solid white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+.Project-box img{
+    width: 230px;
+    height: 200px;
+    border-radius: 10px;
+}
+.Project-box .github,.Project-box .figma{
+    width: 50px;
+    height: auto;
+}
+.Project-box .ptitle{
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
 /* -------------media-quries-for-small-screen-------------- */
 
 @media only screen and (max-width : 800px){

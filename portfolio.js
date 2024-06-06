@@ -84,3 +84,50 @@ function setKnowledgeLevel() {
 }
 setKnowledgeLevel();
 
+// ---------Project
+
+const projectMapping={
+    webclone:"https://netflix-zeta-swart.vercel.app/",
+    sumindex:"https://github.com/Riddh2003/SpringBootRoyal/blob/main/src/main/java/com/controller/FindArrayIndexController.java",
+    weather:"https://github.com/Riddh2003/WeatherApplication/tree/main/Application",
+    numgame:"https://github.com/Riddh2003/Codsoft/blob/main/Projects/NumberGame.java"
+};
+
+var project = document.querySelectorAll('.Project-box');
+
+function projectclick(event) {
+    const p = event.currentTarget.firstElementChild.classList;
+    p.forEach(projectname=> {
+        if(projectMapping[projectname]){
+            window.open(projectMapping[projectname]);
+        }
+    });
+}
+project.forEach(project => {
+    project.addEventListener('click',projectclick);
+});
+
+var projectBox = document.querySelector('.Project-box');
+
+projectBox.addEventListener('click', function() {
+    document.getElementById('menubar').scrollIntoView({ behavior: 'smooth' });
+});
+
+function handleProjectIconClick(event) {
+    const githubURL = 'https://github.com/Riddh2003/Hospital-Management-System';
+    const figmaURL = 'https://www.figma.com/board/nDNoyjJ82aNSHw2HtA2eI3/Hospital-Management-System?node-id=0-1';
+
+    if (event.target.classList.contains('github')) {
+        window.open(githubURL, '_blank');
+    } else if (event.target.classList.contains('figma')) {
+        window.open(figmaURL, '_blank');
+    }
+}
+
+// Add event listeners to the GitHub and Figma icons inside the specific project box
+const hospitalProjectBox = document.querySelector('.Project-box.hostipal');
+const icons = hospitalProjectBox.querySelectorAll('.github, .figma');
+
+icons.forEach(icon => {
+    icon.addEventListener('click', handleProjectIconClick);
+});
