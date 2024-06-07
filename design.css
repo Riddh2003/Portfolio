@@ -194,7 +194,7 @@ body{
 }
 #Project h1{
     font-size: 35px;
-    margin-left: 9%;
+    margin-left: 7%;
 }
 .Project-container{
     display: flex;
@@ -213,8 +213,8 @@ body{
     cursor: pointer;
 }
 .Project-box img{
-    width: 230px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
 }
 .Project-box .github,.Project-box .figma{
@@ -230,11 +230,54 @@ body{
 .Project-box p{
     text-align: center;
 }
+
+/* ---------Contact--------- */
+#Contact{
+    padding: 40px 20px;
+    background-color: black;
+    color:rgb(255, 0, 85);
+    display: flex;
+    justify-content: center;
+}
+#Contact h1{
+    font-size: 35px;
+    margin-bottom: 4%;
+}
+.contact-class{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+}
+.contact-class input{
+    width: 30vb;
+    height: 5vh;
+    background-color: rgba(255, 255, 255,0.9);
+    border: 0;
+    border-radius: 10px;
+}
+input[type=submit]{
+    width: 10vb;
+    color: rgb(255,0,85);
+    font-size: 15px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 2px solid rgb(255,0,85);
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: rgb(255, 0, 85);
+    color: black;
+}
+
 /* -------------media-quries-for-small-screen-------------- */
 
 @media only screen and (max-width : 800px){
-    #menubar,#Home,#Skill,#certification{
-        width: fit-content;
+    #menubar,#Home,#Skill,#certification,#Project{
+        width: 100%;
     }
     #menubar h1{
         text-align: center;
