@@ -27,6 +27,16 @@ function resumeOnClick() {
 }
 resumeButton.addEventListener('click', resumeOnClick);
 
+// --------menubar
+function toggleMenu() {
+    var navLinks = document.querySelector('.a');
+    if(navLinks.classList.contains('show')){
+        navLinks.classList.remove('show');
+    }
+    else{
+        navLinks.classList.add('show');
+    }
+}
 // -------Certificate
 const urlMapping ={
     C:"https://certopus.com/c/7ab568ed89e84f1395cf63b51fbe1427",
